@@ -4,7 +4,17 @@
 .btn {
     background: #0057A6;
     color: white;
+    margin-left: 60px;
 }
 .table {
     margin-top: 20px;
+}
+
+.azul {
+  color: #0057A6;
+}
+
+.table tr .active td { 
+  background-color : #0057A6 !important; 
+  color: #fff; 
 }

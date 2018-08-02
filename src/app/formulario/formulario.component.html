@@ -1,0 +1,19 @@
+<section class="container">
+  <div class="novoRegistro">
+  <form novalidate>
+    <div class="form-group">
+      <label for="formgroupImputName">name</label>
+      <input type="text" class="form-control {{ nameEstadoPrimitivo ? '' : (nameValido ? 'is-valid' : 'is-invalid') }}" id="ImputName"  placeholder="Enter name" [value]="name" #inputName (input)="atualizaName(inputName.value)">
+    </div>
+    <div class="form-group">
+      <label for="formGroupImputPrice">price</label>
+      <input type="text" class="form-control {{ priceEstadoPrimitivo ? '' : (priceValido ? 'is-valid' : 'is-invalid') }}" id="ImputPrice" placeholder="Enter price" [value]="price" #inputPrice (input)="atualizaPrice(inputPrice.value)">
+    </div>
+    <div class="form-group">
+      <label for="formGroupImputSku">sku</label>
+      <input type="text" class="form-control {{ skuEstadoPrimitivo ? '' : (skuValido ? 'is-valid' : 'is-invalid') }}" id="ImputSku" placeholder="Enter Sku" [value]="sku" #inputSku (input)="atualizaSku(inputSku.value)"> 
+    </div>
+    <button type="button" class="btn btn-primary" routerLink="/novo-registro-sucesso" (click)="confirmarRegistro()" >Register</button>
+  </form>
+  </div>
+</section>

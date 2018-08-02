@@ -15,4 +15,5 @@ export class Registro {
     public name4: string
     public price4: number
     public sku4: string
+    public destaque: boolean
 }

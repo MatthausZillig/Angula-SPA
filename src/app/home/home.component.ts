@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
 
     this.registrosService.getRegistros()
       .then(( registros: Registro[] ) => {
-       
         this.registros = registros
         
       })
