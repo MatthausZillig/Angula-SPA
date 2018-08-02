@@ -1,0 +1,39 @@
+<section class="container">
+  <button type="button" class="btn">Cadastrar</button>
+  <table class="table table-light" *ngFor="let registro of registros">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">price</th>
+      <th scope="col">sku</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{ registro.id }}</th>
+      <td>{{ registro.name }}</td>
+      <td>R$ {{ registro.price }}</td>
+      <td>{{ registro.sku }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{ registro.id2 }}</th>
+      <td>{{ registro.name2 }}</td>
+      <td>R$ {{ registro.price2 }}</td>
+      <td>{{ registro.sku2 }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{ registro.id3 }}</th>
+      <td>{{ registro.name3 }}</td>
+      <td>R$ {{ registro.price3 }}</td>
+      <td>{{ registro.sku3 }}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{ registro.id4 }}</th>
+      <td>{{ registro.name4 }}</td>
+      <td>R$ {{ registro.price4 }}</td>
+      <td>{{ registro.sku4 }}</td>
+    </tr>
+  </tbody>
+</table>
+</section>
