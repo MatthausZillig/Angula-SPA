@@ -1,28 +1,49 @@
 # AppBeta
 
+Depois de descompactar os arquivos, acesse o diretório da aplicação (/appBeta) através de uma instancia do Prompt de comando e de o comando ng serve, se tiver sucesso ele vai gerar um url como esse: open your browser on http://localhost:4200, para consumir dados dinâmicos também criei uma API fake com json-server (é preciso ter o ele instalado na maquina), para que a tabela seja gerada com sucesso átravés do Prompt acesse o diretorio da aplicação (/appBeta) e de o comando: dir em seguida de o comando: json-server --watch banco-de-dados.json (importante que seja banco-de-dados.json, pois existe outro arquivo parecido banco_de_dados) em caso de sucesso ele irá gerar os url´s: 
+  
+Resources
+  http://localhost:3000/registros
+  http://localhost:3000/pedidos
+  Home
+  http://localhost:3000
+
+É possível fazer os testar com as url´s fornecidas por você Diego, basta subsistir 
+${URL_API}
+no módulo novo-registro.service.ts (a partir da linha 21 tem um comentário explicando)   
+por: ${URL_API2}
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
-## Development server
+## how to use
+
+In the list registration page a table is being populated by dynamic data from a fake API made by json-server:
+  http: // localhost: 3000 / records
+  http: // localhost: 3000 / requests
+  home: http: // locahost: 3000
+
+click the register button to register a new product, you will be sent to the registration page, where you must fill in the fields, after the validated fields click on the "register", you will be sent to the confirmation page if you find success, to return to the initial screen click list register in the left menu. 
+
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+#### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 

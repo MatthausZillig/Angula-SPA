@@ -92,6 +92,12 @@
       "price": "",
       "sku": "",
       "id": 12
+    },
+    {
+      "name": "matthaus",
+      "price": "ahuahua",
+      "sku": "aahauhau",
+      "id": 13
     }
   ]
 }
